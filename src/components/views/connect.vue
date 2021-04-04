@@ -64,6 +64,7 @@
 						v-model="password"
 						class="input"
 						type="password"
+						autofocus
 					>
 				</div>
 				<div class="field">

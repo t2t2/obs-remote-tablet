@@ -55,6 +55,18 @@ const PANELS_INFO = [
 		}
 	},
 	{
+		name: 'Preview',
+		description: 'Auto Updating Preview of Current Scene',
+		icon: 'photo-video',
+		iconSettings: {},
+		type: 'Preview',
+		defaults() {
+			return {
+				delay: 1
+			}
+		}
+	},
+	{
 		name: 'Scenes Switcher',
 		description: 'Switch the current scene',
 		icon: 'tv',
@@ -94,7 +106,12 @@ const PANELS_INFO = [
 		description: 'Manage stream & recording status',
 		icon: 'dot-circle',
 		iconSettings: {},
-		type: 'Stream'
+		type: 'Stream',
+		defaults() {
+			return {
+				direction: 'row'
+			}
+		}
 	},
 	{
 		name: 'Frame',
@@ -102,6 +119,18 @@ const PANELS_INFO = [
 		icon: 'window-maximize',
 		iconSettings: {},
 		type: 'Iframe'
+	},
+	{
+		name: 'External Component',
+		description: 'Load an external Vue Component',
+		icon: 'file-code',
+		iconSettings: {},
+		type: 'External',
+		defaults() {
+			return {
+				url: false
+			}
+		}
 	}
 ]
 

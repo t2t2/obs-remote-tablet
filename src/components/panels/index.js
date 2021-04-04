@@ -1,8 +1,10 @@
 // Dynamic component resolver
 
+import External from './external'
 import Grid from './grid'
 import Iframe from './iframe'
 import Invalid from './invalid'
+import Preview from './preview'
 import Scenes from './scenes'
 import Sources from './sources'
 import Mixer from './mixer'
@@ -12,9 +14,11 @@ import Durations from './durations'
 import panelMixin from '@/mixins/panel'
 
 const components = {
+	External,
 	Grid,
 	Iframe,
 	Invalid,
+	Preview,
 	Scenes,
 	Sources,
 	Mixer,

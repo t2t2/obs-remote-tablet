@@ -13,7 +13,9 @@ export default {
 		recTimecode: 0,
 		numTotalFrames: 0,
 		numDroppedFrames: 0,
-		fps: 0
+		fps: 0,
+		cpuUsage: 0,
+		outputSkippedFrames: 0
 	},
 	actions,
 	getters: {

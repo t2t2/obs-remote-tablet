@@ -73,6 +73,9 @@
 			}
 		}
 	}
+	& .button.is-disabled {
+		--text-opacity: .5;
+	}
 
 	& a {
 		@apply .text-blue-500;

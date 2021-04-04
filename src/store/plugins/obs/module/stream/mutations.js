@@ -1,10 +1,12 @@
 import {updateStateKey} from '../../../../../util'
 
 const setBytesPerSec = updateStateKey('bytesPerSec')
+const setCpuUsage = updateStateKey('cpuUsage')
 const setFps = updateStateKey('fps')
 const setKbitsPerSec = updateStateKey('kbitsPerSec')
 const setNumberDroppedFrames = updateStateKey('numDroppedFrames')
 const setNumberTotalFrames = updateStateKey('numTotalFrames')
+const setOutputSkippedFrames = updateStateKey('outputSkippedFrames')
 const setRecording = updateStateKey('recording')
 const setRecTimecode = updateStateKey('recTimecode')
 const setStrain = updateStateKey('strain')
@@ -36,6 +38,8 @@ function streamStatus(state, status) {
 	setFps(state, status.fps)
 	setStreamTimecode(state, status['stream-timecode'])
 	setRecTimecode(state, status['rec-timecode'])
+	setCpuUsage(state, status['cpu-usage'])
+	setOutputSkippedFrames(state, status['output-skipped-frames'])
 }
 
 function heartbeat(state, status) {
@@ -45,6 +49,8 @@ function heartbeat(state, status) {
 	setFps(state, stats.fps)
 	setRecTimecode(state, status['rec-timecode'])
 	setStreamTimecode(state, status['stream-timecode'])
+	setCpuUsage(state, stats['cpu-usage'])
+	setOutputSkippedFrames(state, stats['output-skipped-frames'])
 }
 
 export default {

@@ -1,5 +1,9 @@
 .alert {
-	@apply .bg-red-300 .border-l-4 .border-red-500 .text-red-800 .p-4 mb-2;
+	@apply .border-l-4 .p-4 mb-2 .bg-red-300 .border-red-500 .text-red-800;
+
+	 &.success {
+		@apply .bg-green-300 .border-green-500 .text-green-800;
+	}
 
 	&:last-child {
 		@apply .mb-0;

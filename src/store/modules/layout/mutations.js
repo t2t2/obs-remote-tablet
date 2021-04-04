@@ -13,6 +13,12 @@ export function setSetting(state, {id, key, value}) {
 	Vue.set(state.panels[id].settings, key, value)
 }
 
+export function importLayout(state, layout) {
+	state.nextId = layout.nextId
+	state.panels = layout.panels
+	state.tabs = layout.tabs
+}
+
 export function resetLayout(state) {
 	state.nextId = 3
 	state.panels = {

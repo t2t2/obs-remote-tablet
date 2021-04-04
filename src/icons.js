@@ -17,10 +17,12 @@ import {
 	faVideo,
 	faVolumeMute,
 	faVolumeUp,
-	faWindowMaximize
+	faWindowMaximize,
+	faPhotoVideo,
+	faFileCode,
+	faUpload,
+	faDownload
 } from '@fortawesome/free-solid-svg-icons'
-import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome'
-
 library.add(
 	faChartBar,
 	faCheck,
@@ -38,7 +40,13 @@ library.add(
 	faVideo,
 	faVolumeMute,
 	faVolumeUp,
-	faWindowMaximize
+	faWindowMaximize,
+	faPhotoVideo,
+	faFileCode,
+	faUpload,
+	faDownload
 )
+
+import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome'
 
 Vue.component('FontAwesomeIcon', FontAwesomeIcon)

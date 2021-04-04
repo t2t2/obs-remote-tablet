@@ -12,6 +12,9 @@
 	&.has-icon {
 		@apply p-2 text-2xl;
 	}
+	&.is-disabled {
+		pointer-events: none;
+	}
 }
 @screen md {
 	.button-ui {
