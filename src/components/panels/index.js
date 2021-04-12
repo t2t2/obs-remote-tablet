@@ -4,11 +4,13 @@ import Grid from './grid'
 import Iframe from './iframe'
 import Invalid from './invalid'
 import Scenes from './scenes'
+import PreviewScenes from './preview-scenes'
 import Sources from './sources'
 import Mixer from './mixer'
 import Stream from './stream'
 import Transitions from './transitions'
 import Durations from './durations'
+import Studio from './studio'
 import panelMixin from '@/mixins/panel'
 
 const components = {
@@ -16,10 +18,12 @@ const components = {
 	Iframe,
 	Invalid,
 	Scenes,
+	PreviewScenes,
 	Sources,
 	Mixer,
 	Transitions,
 	Durations,
+	Studio,
 	Stream
 }
 

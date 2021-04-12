@@ -62,6 +62,13 @@ const PANELS_INFO = [
 		type: 'Scenes'
 	},
 	{
+		name: 'Preview Switcher',
+		description: 'Switch the preview scene',
+		icon: 'tv',
+		iconSettings: {},
+		type: 'PreviewScenes'
+	},
+	{
 		name: 'Sources List',
 		description: 'Toggle sources on and off',
 		icon: 'video',
@@ -88,6 +95,13 @@ const PANELS_INFO = [
 		icon: 'clock',
 		iconSettings: {},
 		type: 'Durations'
+	},
+	{
+		name: 'Studio Controls',
+		description: 'Transition controls for studio mode',
+		icon: 'sliders-h',
+		iconSettings: {},
+		type: 'Studio'
 	},
 	{
 		name: 'Stream Status',
