@@ -55,6 +55,13 @@ const PANELS_INFO = [
 		}
 	},
 	{
+		name: 'Profile Switcher',
+		description: 'Switch the current profile',
+		icon: 'cog',
+		iconSettings: {},
+		type: 'Profiles'
+	},
+	{
 		name: 'Scenes Switcher',
 		description: 'Switch the current scene',
 		icon: 'tv',
