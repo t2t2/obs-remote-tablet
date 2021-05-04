@@ -15,3 +15,13 @@ Built files will be in `dist/` directory, serve these with your favourite webser
 * Clone
 * Install dependencies
 * `npm run dev`
+
+## Dockerfile
+
+The Dockerfile may be useful if you don't want to/can't install npm.
+It is not currently officially supported, please send fixes if
+needed.
+
+* `docker build -t obs-tablet-remote .`
+* `docker run -it --rm --expose=8080 obs-tablet-remote`
+* You can then direct your web browser to `http://localhost:8080`
