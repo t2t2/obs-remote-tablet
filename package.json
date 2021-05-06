@@ -21,7 +21,7 @@
     "@fortawesome/vue-fontawesome": "^0.1.10",
     "core-js": "^3.6.4",
     "eventemitter3": "^4.0.4",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "sha.js": "^2.4.11",
     "vue": "^2.6.11",
     "vuex": "^3.4.0",
